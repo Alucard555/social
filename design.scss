@@ -19,6 +19,7 @@ body {
   box-sizing: border-box;
   background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
+  height: 100vh;
 }
 
 .dark-mode {
@@ -36,7 +37,8 @@ body {
 .header {
   // background-color: red;
   width: 93.5%;
-  margin: 15px auto;
+  margin: 0 auto;
+  padding: 15px 0;
   // gap: 90px;
     display: flex;
     justify-content: space-between;
