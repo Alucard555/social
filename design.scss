@@ -12,7 +12,7 @@
   // --ninth-color: #20222F;
 }
 
-html,
+html
 body {
   margin: 0;
   padding: 0;
@@ -75,7 +75,6 @@ body {
 
 .main {
   // FIRST-SECTION
-  // padding: 20px;
   .sec-1 {
     #box1 {
       position: relative;
@@ -166,7 +165,7 @@ body {
       display: flex;
       justify-content: left;
       color: var(--tertiary-color);
-      margin: 20px 50px;
+      margin: 20px 60px;
       font-family: Inter;
       font-size: 24px;
       font-style: normal;
@@ -339,7 +338,8 @@ body {
 @media only screen and (max-width: 375px) {
   html,
   body {
-    width: 100%;
+    // width: 100%;
+    // height: 300vh;
   }
   
   .header {

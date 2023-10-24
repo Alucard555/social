@@ -10,8 +10,7 @@
   --height-color: #f1f3fa;
 }
 
-html,
-body {
+html body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -142,7 +141,7 @@ body {
   display: flex;
   justify-content: left;
   color: var(--tertiary-color);
-  margin: 20px 50px;
+  margin: 20px 60px;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -289,10 +288,6 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
-  html,
-  body {
-    width: 100%;
-  }
   .header {
     flex-direction: column;
     padding: 0;
