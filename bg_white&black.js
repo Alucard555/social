@@ -2,7 +2,7 @@ const toggleBtn = document.querySelector('.theme-toggle')
 
 const darkbtn = 'theme-toggle'
 const lightbtn = 'theme-toggle'
-
+  
 
 toggleBtn.addEventListener('click', () => {
 // if (Image.scr.endsWith(lightbtn)){

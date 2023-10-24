@@ -9,7 +9,7 @@
   --sixth-color: #dc414c;
   --seventh-color: #1eb589;
   --height-color: #f1f3fa;
-  --ninth-color: #20222F;
+  // --ninth-color: #20222F;
 }
 
 html,
@@ -25,20 +25,22 @@ body {
   --tertiary-color: #1d1f29;
   --primary-color: #fff;
   --secondary-color: #49566d;
-
 }
+
 .grey-mode {
   --fifth-color: #f1f3fa;
   --fourth-color: #252b42;
   --secondary-color: #979797;
-
 }
 
 .header {
-  .cont {
+  // background-color: red;
+  width: 93.5%;
+  margin: 15px auto;
+  // gap: 90px;
     display: flex;
     justify-content: space-between;
-    padding: 20px 70px;
+    // padding: 20px 0;
     .logo {
       line-height: 0.1rem;
       h2 {
@@ -66,12 +68,12 @@ body {
         border: none;
       }
     }
-  }
+  
 }
 
 .main {
   // FIRST-SECTION
-  padding: 20px;
+  // padding: 20px;
   .sec-1 {
     #box1 {
       position: relative;
@@ -95,7 +97,9 @@ body {
         transition: background-color 0.3s; // Add a smooth transition effect
 
         &:hover {
-          background-color: var(--secondary-color); // Change the background color on hover
+          background-color: var(
+            --secondary-color
+          ); // Change the background color on hover
         }
         .logo {
           display: flex;
@@ -157,8 +161,6 @@ body {
   // SECOND-SECTION
   .sec-2 {
     .header2 {
-      // background-color: red;
-
       display: flex;
       justify-content: left;
       color: var(--tertiary-color);
@@ -178,9 +180,9 @@ body {
       gap: 20px;
       position: relative;
       place-items: center;
-      
+
       .contDiv {
-        width: 80% ;
+        width: 80%;
         height: 125px;
         background-color: var(--fifth-color);
         transition: background-color 0.3s;
@@ -195,7 +197,7 @@ body {
           position: relative;
           top: 10px;
           justify-content: space-around;
-          
+
           .PVnames {
             color: var(--fourth-color);
             font-family: Inter;
@@ -203,12 +205,12 @@ body {
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-          }  
+          }
 
           img {
             display: flex;
             justify-content: space-between;
-          }  
+          }
         }
 
         .FCount {
@@ -256,7 +258,7 @@ body {
       gap: 20px;
       position: relative;
       place-items: center;
-      
+
       .contDiv2 {
         width: 80%;
         height: 125px;
@@ -273,7 +275,7 @@ body {
           position: relative;
           top: 10px;
           justify-content: space-around;
-          
+
           .PVnames2 {
             color: var(--fourth-color);
             font-family: Inter;
@@ -327,63 +329,66 @@ body {
     }
   }
 
-  MOBILE-VERSION
+  // MOBILE-VERSION
 
-  $background-color_1: red;
+  // $background-color_1: red;
+}
 
-  @media screen and (max-width: 375px) {
-    html,
-    body {
-      width: 100%;
-      // background-color: $background-color_1;
-    }
+@media only screen and (max-width: 375px) {
+  html,
+  body {
+    width: 100%;
+  }
+  
+  .header {
 
-    .header {
-      .cont {
-        flex-direction: column;
-        margin: 20px 0;
-        .logo {
-          // background-color: black;
-          width: 120%;
-          position: relative;
-          right: 25px;
-
-          h2 {
-            font-size: 24px;
-          }
-        }
+    // .cont{
+      flex-direction: column;
+      padding: 0;
+     .logo{
+      line-height: 0.5rem;
+      width: 80%;
+      margin: 0 auto;
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 14px;
+      }     
       }
 
-      .btn {
-        position: relative;
-        top: 20px;
-        width: 120%;
-        right: 60px;
+      .divider {
+        margin: 20px auto ;
+        height: 1px;
+        background-color: var(--height-color);
+        width: 75%;
+      }
 
+      .btn{
+        width: 80%;
+        margin: 0 auto;
+        // background-color: red;
+        gap: 130px;
         .theme-toggle {
-          svg {
-            position: relative;
-            top: 7px;
-            left: 80px;
-          }
+          position: relative;
+          top: 1px;
         }
+      }
+    // }
+  }
+
+  .main {
+
+    .sec-1{
+      
+      #box1 {
+        gap: 15px;
       }
     }
+    .sec-2 {
 
-    .main {
-      .sec-1 {
-        flex-direction: column;
-        gap: 20px;
-        position: relative;
-        left: 50px;
-      }
-
-      .sec-2 {
-        .header2 {
-          // margin: 20px 20px;
-          font-size: 23px;
-          width: 310px;
-        }
+      .header2 {
+        font-size: 14px;
       }
     }
   }

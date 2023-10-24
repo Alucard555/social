@@ -8,7 +8,6 @@
   --sixth-color: #dc414c;
   --seventh-color: #1eb589;
   --height-color: #f1f3fa;
-  --ninth-color: #20222F;
 }
 
 html,
@@ -32,30 +31,31 @@ body {
   --secondary-color: #979797;
 }
 
-.header .cont {
+.header {
+  width: 93.5%;
+  margin: 15px auto;
   display: flex;
   justify-content: space-between;
-  padding: 20px 70px;
 }
-.header .cont .logo {
+.header .logo {
   line-height: 0.1rem;
 }
-.header .cont .logo h2 {
+.header .logo h2 {
   font-size: 30px;
   color: var(--tertiary-color);
 }
-.header .cont .logo p {
+.header .logo p {
   color: var(--fourth-color);
 }
-.header .cont .btn {
+.header .btn {
   display: flex;
   justify-content: space-around;
   gap: 30px;
 }
-.header .cont .btn p {
+.header .btn p {
   color: var(--fourth-color);
 }
-.header .cont .btn .theme-toggle {
+.header .btn .theme-toggle {
   position: relative;
   top: -8px;
   cursor: pointer;
@@ -63,9 +63,6 @@ body {
   border: none;
 }
 
-.main {
-  padding: 20px;
-}
 .main .sec-1 #box1 {
   position: relative;
   place-items: center;
@@ -287,4 +284,47 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+@media only screen and (max-width: 375px) {
+  html,
+  body {
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .header .logo {
+    line-height: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .header .logo h2 {
+    font-size: 22px;
+  }
+  .header .logo p {
+    font-size: 14px;
+  }
+  .header .divider {
+    margin: 20px auto;
+    height: 1px;
+    background-color: var(--height-color);
+    width: 75%;
+  }
+  .header .btn {
+    width: 80%;
+    margin: 0 auto;
+    gap: 130px;
+  }
+  .header .btn .theme-toggle {
+    position: relative;
+    top: 1px;
+  }
+  .main .sec-1 #box1 {
+    gap: 15px;
+  }
+  .main .sec-2 .header2 {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=design.css.map */
